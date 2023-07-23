@@ -8,7 +8,7 @@ En este proyecto se realizó una aplicacion fullstack la cual permite registrar 
 La parte backend fué contruida con **nodejs**, utilizando el framework express y para la persistencia de los datos se utilizó **mysql** implementando sequelize como ORM.
 
 ### frontend
-El frontend fué construido con **Reactjs** implementando MUI como libreria UI, utilizó el context-Api para la administracion del estado y react-router-dom para el manejo de las rutas. El proyecto fué construido con vite.
+El frontend fué construido con **Reactjs** implementando MUI como libreria UI, se utilizó el context-Api para la administracion del estado y react-router-dom para el manejo de las rutas. El proyecto fué construido con vite.
  
 ## Comenzando 🚀
 a continuacion se describirá una serie de pasos para la instalacion del proyecto.
@@ -16,12 +16,12 @@ el proyecto se desplegará en tres contenedores
 1. el contenedor mySql que maneja la persistencia de los datos
 2. un contenedor nodejs que ejecuta toda la logica del backend y expone la informacion atraves de una API-REST en el **puerto 4000**
 3. un servidor nginx  donde está desplegado la single page aplication (spa) construida con react y la sirve en el puerto **8080**.
-Todo esto se construye de forma automática utlizando la aplicacion de **docker compose**
+Todo esto se construye de forma automática utlizando la aplicación de **docker compose**
 
 ### Pre-requisitos 📋
 requiere de las siguientes herramientas:
-2. instalacion de node js
-1. instalacion de **Docker**
+1. instalacion de node js
+2. instalacion de **Docker**
 
 ## Despliegue 📦
 para desplegar realizar:
@@ -30,7 +30,10 @@ para desplegar realizar:
 3. docker compose up
 
 Una vez construida y desplegada la imagen usted tendrá un servidor web funcionando en el **localhost:8080** donde podrá iniciar el registro de usuarios y publicaciones.
+ ![scren de registro](/assets/registro.png)
  ![scren de login](/assets/login.png)
+ ![scren de home](/assets/home.png)
 
 ## Documentacion 🛠️
-en el repositorio se encuentra una carpeta con nombre documentacion donde encontrará una coleccion de postman con la api documentada y el diagrama de la relacion de la base de datos.
+en el repositorio se encuentra una carpeta con nombre documentación donde encontrará una colección de postman con la api documentada y el diagrama de la relación de la base de datos.
+Además en el repositorio en las carpetas de cada proyecto frontend y backend está el código fuente respectivo.
