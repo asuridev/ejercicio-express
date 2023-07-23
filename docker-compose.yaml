@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  db_carvajal:
+    container_name: dbcarvajal
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=asuri
+      - MYSQL_PASSWORD=asuri
+      - MYSQL_DATABASE=carvajal-db
+  micro:
+    depends_on:
+      - db_carvajal
+    container_name: micro-carvajal
+    build: ./backend
+    image: micro-prueba-carvajal
+    ports:
+      - "4000:4000"
+  front:
+    container_name: front-carvajal
+    build: ./frontend
+    image: fontend-prueba-carvajal
+    ports:
+      - "8080:80"
