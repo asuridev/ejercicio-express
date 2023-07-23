@@ -21,7 +21,8 @@ Todo esto se construye de forma automática utlizando la aplicación de **docker
 ### Pre-requisitos 📋
 requiere de las siguientes herramientas:
 1. instalacion de node js
-2. instalacion de **Docker**
+2. instalacion de git
+3. instalacion de **Docker**
 
 ## Despliegue 📦
 para desplegar realizar:
@@ -29,11 +30,14 @@ para desplegar realizar:
 2. cd prueba-carvajal 
 3. docker compose up
 
-Una vez construida y desplegada la imagen usted tendrá un servidor web funcionando en el **localhost:8080** donde podrá iniciar el registro de usuarios y publicaciones.
+Una vez construida y desplegada la imagen usted tendrá un servidor web funcionando en el localhost:8080 donde podrá iniciar el registro de usuarios y publicaciones.
+
+**nota** recomiendo una vez  este montado el contenedor detener(stop) y correr(play) nuevamente el contenedor.
+
  ![scren de registro](/assets/registro.png)
  ![scren de login](/assets/login.png)
  ![scren de home](/assets/home.png)
-
+  **nota** recomiendo 
 ## Documentacion 🛠️
 en el repositorio se encuentra una carpeta con nombre documentación donde encontrará una colección de postman con la api documentada y el diagrama de la relación de la base de datos.
 Además en el repositorio en las carpetas de cada proyecto frontend y backend está el código fuente respectivo.
